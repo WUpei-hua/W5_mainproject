@@ -228,8 +228,9 @@ img {
   padding-bottom: 16px;
 }
 
-.item li li:hover {
+.item li:hover {
   background: #EAF0ED;
+  cursor: pointer;
 }
 
 .product {

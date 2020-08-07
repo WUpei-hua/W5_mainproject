@@ -13,7 +13,8 @@
         padding-bottom: 16px;
     }
 }
-.item li{
+.item{
+    li{
     font-size: $font-middle;
     font-weight: $font-weight-l;
     color: $green-dark;
@@ -22,8 +23,10 @@
     border: 1px solid $green-light;
     padding-top: 16px;
     padding-bottom: 16px;
+    }
     li:hover{
         background: $green-light;
+        cursor: pointer;
     }
 }
 .product{
