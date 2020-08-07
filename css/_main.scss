@@ -1,0 +1,165 @@
+.content{
+    display: flex;
+}
+.list{
+    width: 33%;
+    h2{
+        font-size: $font-middle;
+        font-weight: $font-weight-l;
+        color: $green-light;
+        text-align: center;
+        background: $green-dark;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+}
+.item li{
+    font-size: $font-middle;
+    font-weight: $font-weight-l;
+    color: $green-dark;
+    text-align: center;
+    background: $white;
+    border: 1px solid $green-light;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    li:hover{
+        background: $green-light;
+    }
+}
+.product{
+    width: 66%;
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    li{
+        margin-bottom: 20px;
+        position: relative;
+    }
+    button{
+        background: $green-light;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        font-size: $font-middle;
+        color: $green-dark;
+        text-align: center;
+        font-weight: $font-weight-l;
+        width: 100%;
+        border: 0;
+        cursor: pointer;
+    }
+}
+.today{
+    position: absolute;
+    top: 0;
+    left: 20px;
+    padding: 10.8px 10px 9.24px 10px;
+    background: $green-dark;
+    color: $green-light;
+    writing-mode: vertical-lr;
+    text-align: center;
+}
+.like{
+    position: absolute;
+    top: 19px;
+    right: 22px;  
+}
+.price{
+    display: flex;
+    border: 1px solid $green-light;
+    h3{
+        width: 60%;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        background: $white;
+        font-size: $font-small;
+        font-weight: $font-weight-s;
+        color: $green-dark;
+        text-align: center;
+    }
+    span{
+        width: 40%;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        border-left: 1px solid $green-light;
+        text-align: center;
+        font-size: $font-small;
+        font-weight: $font-weight-l;
+        color: $green-dark;
+    }
+}
+.page{
+    display: flex;
+    justify-content: flex-end;
+    ul{
+        margin-bottom: 60px;
+        display: flex;
+        justify-content: space-between;
+    }
+    a{
+        padding: 16px 16px 0 16px;
+        border: 1px solid $green-light;
+    }
+    a:hover{
+        background: $green-light;
+    }
+    p{
+        padding: 16px 25px 16px 25px;
+        text-align: center;
+        font-size: $font-small;
+        font-weight: $font-weight-s;
+        line-height: 1.2;
+        color: $green-dark;
+        border: 1px solid $green-light;
+    }
+    p:hover{
+        color: $green-light;
+        background: $green-dark;
+        cursor: pointer;
+    }
+}
+@include ipad(){
+    .content{
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        .list{
+            width: 100%;
+        }
+        .item{
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+            li{
+                width: 49.6%;
+                margin: 0 auto;
+            }
+        }
+        .product{
+            margin-left: 0;
+            li{
+                width: 48%;
+            }
+        }
+    }
+    .page{
+        justify-content: center;
+        ul{
+            margin-bottom: 30px;
+        }
+    }
+}
+@include iphon6plus(){
+    .content{
+        .item li{
+            width: 100%;
+        }
+        .product{
+            flex-direction: column;
+            align-items: center;
+            li{
+                width: 100%;
+            }
+        }
+    }
+}

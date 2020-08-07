@@ -1,0 +1,128 @@
+.loginpage{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0px 80px 60px 80px;
+    margin-top: 30px;
+}
+.login{
+    width: 50%;
+    background: $green-dark;
+    h2{
+        margin: 40px 0 40px 0;
+        font-size: $font-large;
+        font-weight: $font-weight-l;
+        color: $green-light;
+        text-align: center;
+    }
+    .person{
+        margin: 0 30px 16px 30px;
+        background: $green-light;
+        display: flex;
+        justify-content: start;
+        width: 85%;
+        input{
+            font-weight: $font-weight-s;
+        }
+    }
+    .rememberbox{
+        margin: 0px 0px 25px 30px;
+        display: flex;
+        justify-content: start;
+        background: none;
+        color: $green-light;
+        input{
+            background: $green-light;
+            margin-right: 8px;
+            width: 16px;
+            height: 16px;
+            color: $green-light;
+            font-weight: $font-weight-l;
+        }
+    }
+    .submit{
+        width: 100%;
+        input{
+            border: none;
+            background: $yellow;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;;
+            font-size: $font-middle;
+            font-weight: $font-weight-l;
+            color: $green-dark;
+            padding: 16px 0px 16px 0px;
+            width: 100%;
+            text-align: center;
+            cursor: pointer;
+        }
+    }
+
+}
+#account, #code{
+    background: $green-light;
+    border: none;
+    outline: none;
+}
+.connectsns{
+    width: 50%;
+    background: $green-light;
+    margin: 15px 0px 15px 0px;
+    h3{
+        margin: 40px 0px 36px 0px;
+        font-size: $font-middle;
+        font-weight: $font-weight-s;
+        text-align: center;
+        color: $green-middle;
+    }
+    .sns{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        button{
+            margin-bottom: 16px;
+            border: none;
+            background: $white;
+            height: 56px;
+            width: 85%;
+            text-align: -webkit-center;
+        }
+    }
+}
+@include pad(){
+    .loginpage{
+        padding: 0px 60px 60px 60px;
+        .login{
+            width: 60%;
+        }
+        .connectsns{
+            width: 40%;
+        }
+    }
+}
+@include iphon6plus(){
+    .loginpage{
+        padding: 0;
+        .login{
+            width: 100%;
+            h2{
+                margin-bottom: 176px;
+            }
+        }
+        .connectsns{
+            position: absolute;
+            top: 110px;
+            width: 100%;
+            h3{
+                display: none;
+            }
+            .sns{
+                flex-direction: row;
+                justify-content: center;
+                margin: 30px;
+                button{
+                    border: solid 1px $green-light;
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+}

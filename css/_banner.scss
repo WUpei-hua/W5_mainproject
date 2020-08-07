@@ -1,0 +1,8 @@
+.banner{
+    margin-bottom: 60px;
+}
+@include ipad(){
+    .banner{
+        margin-bottom: 0;
+    }
+}

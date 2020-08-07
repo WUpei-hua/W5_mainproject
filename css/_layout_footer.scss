@@ -1,0 +1,125 @@
+.footer{
+    background: $green-light;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.mailbar{
+    background: $green-dark;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 40px 122px 40px 122px;
+}
+.subscribetitle{
+    display: flex;
+    img{
+        width: 40px;
+        height: 40px;
+        padding-right: 20px;
+    }
+    h3{
+        font-size: $font-middle;
+        font-weight: $font-weight-m;
+        line-height: 1.5;
+        color: $white;
+    }
+}
+form{
+    background: $green-light;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    .material-icons{
+        padding: 16px 20px 16px 20px;
+    }
+    #mail{
+        background: $green-light;
+        border: none;
+        outline: none;
+    }
+    a .material-icons{
+        background: $yellow;
+    }
+}
+.contact{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 122px;
+    padding-right: 122px;
+    .information{
+        padding-bottom: 30px;
+        img{
+            padding-top: 38px;
+            padding-bottom: 115.5px;
+            width: 171.22px;
+            height: 26.6px;
+        }
+        li{
+            font-weight: $font-weight-l;
+            line-height: 1.5;
+            color: $green-dark;
+        }
+    }
+    .slogan{
+        padding-top: 30px;
+        padding-bottom: 46.31px;
+    }
+}
+.others{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 122px 30px 122px;
+}
+.sns{
+    display: flex;
+    li a img{
+        margin-right: 8px;
+        width: 32px;
+        height: 32px;
+    }
+}
+.co{
+    color: $green-dark;
+}
+@include ipad(){
+    .mailbar{
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        form{
+            margin-top: 30px;
+        }
+    }
+    .contact{
+        padding-left: 30px;
+        padding-right: 30px;
+        .information img{
+            padding-bottom: 39.5px;
+        }
+        .slogan{
+            padding-bottom: 0px;
+        }
+    }
+    .others{
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 30px;
+        padding-right: 0;
+        .sns{
+            margin-bottom: 23px;
+        }
+    }
+}
+@include iphon6plus(){
+    form{
+        margin-top: 30px;
+        width: 280px;
+    }
+    .slogan{
+        display: none;
+    }
+}
