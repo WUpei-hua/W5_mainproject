@@ -62,9 +62,9 @@ img{
         display: block;
         padding-left: 30px;
         padding-right: 30px;
-    }
-    li a:hover{
-        background: #EAF0ED;
+        &:hover{
+            background: #EAF0ED;
+        }
     }
 }
 @include ipad(){
@@ -74,9 +74,9 @@ img{
         padding-right: 30px;
         .ham{
             display: block;
-        }
-        .ham:focus{
-            outline: 0;
+            &:focus{
+                outline: 0;
+            }
         }
         .logo a{
             background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logotype-lg-dark.svg);

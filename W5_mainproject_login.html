@@ -37,27 +37,29 @@
         <div class="loginpage" data-aos="zoom-in" data-aos-delay="300">
             <div class="login">
                 <h2>會員登入</h2>
-                <form class="person" action="personalaccount.html" data-aos="zoom-in" data-aos-delay="500">
-                    <label for="account">
-                        <span class="material-icons">
-                            person
-                        </span>
-                    </label>
-                    <input id="account" type="text" placeholder="電子信箱/手機號碼" name="account">
-                </form>
-                <form class="person" action="personalcode.html" data-aos="zoom-in" data-aos-delay="500">
-                    <label for="code">
-                        <span class="material-icons">
-                            vpn_key
-                        </span>
-                    </label>
-                    <input id="code" type="text" placeholder="請輸入使用者密碼" name="code">
-                </form>
-                <form class="rememberbox" action="rememberme.html" data-aos="zoom-in" data-aos-delay="500">
-                    <input type="checkbox" value="id" name="remember"> 記住我
-                </form>
-                <form class="submit" action="W5_mainproject_mainpage.html" data-aos="zoom-in" data-aos-delay="500">
-                    <input type="submit" value="登入帳號">
+                <form action="personalaccount.html" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="account">
+                        <label for="account">
+                            <span class="material-icons">
+                                person
+                            </span>
+                        </label>
+                        <input id="account" type="text" placeholder="電子信箱/手機號碼" name="account">
+                    </div>
+                    <div class="code">
+                        <label for="code">
+                            <span class="material-icons">
+                                vpn_key
+                            </span>
+                        </label>
+                        <input id="code" type="text" placeholder="請輸入使用者密碼" name="code">
+                    </div>
+                    <div class="rememberbox">
+                        <input type="checkbox" value="id" name="remember"> 記住我
+                    </div>
+                    <div class="submit">
+                        <input type="submit" value="登入帳號">
+                    </div>
                 </form>
             </div>
             <div class="connectsns">

@@ -16,11 +16,13 @@
         color: $green-light;
         text-align: center;
     }
-    .person{
+    form{
+        display: unset;
+    }
+    .account, .code{
         margin: 0 30px 16px 30px;
-        background: $green-light;
         display: flex;
-        justify-content: start;
+        background: $green-light;
         width: 85%;
         span{
             cursor: pointer;
@@ -31,8 +33,6 @@
     }
     .rememberbox{
         margin: 0px 0px 25px 30px;
-        display: flex;
-        justify-content: start;
         background: none;
         color: $green-light;
         input{

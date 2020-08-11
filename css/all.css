@@ -444,34 +444,29 @@ img {
   text-align: center;
 }
 
-.login .person {
+.login form {
+  display: unset;
+}
+
+.login .account, .login .code {
   margin: 0 30px 16px 30px;
-  background: #EAF0ED;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  background: #EAF0ED;
   width: 85%;
 }
 
-.login .person span {
+.login .account span, .login .code span {
   cursor: pointer;
 }
 
-.login .person input {
+.login .account input, .login .code input {
   font-weight: 300;
 }
 
 .login .rememberbox {
   margin: 0px 0px 25px 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
   background: none;
   color: #EAF0ED;
 }

@@ -23,10 +23,10 @@
     border: 1px solid $green-light;
     padding-top: 16px;
     padding-bottom: 16px;
-    }
-    li:hover{
+    &:hover{
         background: $green-light;
         cursor: pointer;
+    }
     }
 }
 .product{
@@ -102,9 +102,9 @@
     a{
         padding: 16px 16px 0 16px;
         border: 1px solid $green-light;
-    }
-    a:hover{
-        background: $green-light;
+        &:hover{
+            background: $green-light;
+        }
     }
     p{
         padding: 16px 25px 16px 25px;
@@ -114,11 +114,11 @@
         line-height: 1.2;
         color: $green-dark;
         border: 1px solid $green-light;
-    }
-    p:hover{
-        color: $green-light;
-        background: $green-dark;
-        cursor: pointer;
+        &:hover{
+            color: $green-light;
+            background: $green-dark;
+            cursor: pointer;
+        }
     }
 }
 @include ipad(){
